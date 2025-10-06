@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Kiểu dùng chung -->
+  <xs:simpleType name="TenType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MoTaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <!-- DANHMUC -->
+  <xs:complexType name="DanhMucType">
+    <xs:sequence>
+      <xs:element name="TENDM" type="TenType"/>
+      <xs:element name="MOTA" type="MoTaType"/>
+    </xs:sequence>
+    <xs:attribute name="MADM" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <!-- SANPHAM -->
+  <xs:complexType name="SanPhamType">
+    <xs:sequence>
+      <xs:element name="TENSP" type="TenType"/>
+      <xs:element name="MOTA" type="MoTaType"/>
+      <xs:element name="GIANHAP" type="xs:decimal"/>
+      <xs:element name="GIABAN" type="xs:decimal"/>
+      <xs:element name="KICHTHUOC" type="xs:string"/>
+      <xs:element name="MAUSAC" type="xs:string"/>
+      <xs:element name="CHATLIEU" type="xs:string"/>
+      <xs:element name="HANG" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="MASP" type="xs:ID" use="required"/>
+    <xs:attribute name="MADM" type="xs:IDREF" use="required"/>
+  </xs:complexType>
+
+  <!-- NHACUNGCAP -->
+  <xs:complexType name="NhaCungCapType">
+    <xs:sequence>
+      <xs:element name="TENNCC" type="TenType"/>
+      <xs:element name="DIACHI" type="xs:string"/>
+      <xs:element name="SODT" type="xs:string"/>
+      <xs:element name="EMAIL" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="MANCC" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <!-- NHANVIEN -->
+  <xs:complexType name="NhanVienType">
+    <xs:sequence>
+      <xs:element name="TENNV" type="TenType"/>
+      <xs:element name="SODT" type="xs:string"/>
+      <xs:element name="VITRI" type="xs:string"/>
+      <xs:element name="MATKHAU" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="MANV" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <!-- PHIEU -->
+  <xs:complexType name="PhieuType">
+    <xs:sequence>
+      <xs:element name="NGAYNHAP" type="xs:string"/>
+      <xs:element name="TONGTIEN" type="xs:decimal"/>
+      <xs:element name="NGHI" type="xs:string"/>
+      <xs:element name="TENNV" type="TenType"/>
+      <xs:element name="LOAIPHIEU" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="MAPHIEU" type="xs:ID" use="required"/>
+    <xs:attribute name="MANCC" type="xs:IDREF" use="required"/>
+    <xs:attribute name="MANV" type="xs:IDREF" use="required"/>
+  </xs:complexType>
+
+  <!-- CHITIETPHIEU -->
+  <xs:complexType name="ChiTietPhieuType">
+    <xs:sequence>
+      <xs:element name="SOLUONG" type="xs:integer"/>
+      <xs:element name="GIA" type="xs:decimal"/>
+    </xs:sequence>
+    <xs:attribute name="MACTP" type="xs:ID" use="required"/>
+    <xs:attribute name="MAPHIEU" type="xs:IDREF" use="required"/>
+    <xs:attribute name="MASP" type="xs:IDREF" use="required"/>
+  </xs:complexType>
+
+  <!-- KE -->
+  <xs:complexType name="KeType">
+    <xs:sequence>
+      <xs:element name="TONKHO" type="xs:integer"/>
+      <xs:element name="VITRI" type="xs:string"/>
+      <xs:element name="NGAYCAPNHAT" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="MAKE" type="xs:ID" use="required"/>
+    <xs:attribute name="MASP" type="xs:IDREF" use="required"/>
+  </xs:complexType>
+
+  <!-- QUANLYKHO -->
+  <xs:element name="QUANLYKHO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DANHMUC" type="DanhMucType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="SANPHAM" type="SanPhamType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="NHACUNGCAP" type="NhaCungCapType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="NHANVIEN" type="NhanVienType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="PHIEU" type="PhieuType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="CHITIETPHIEU" type="ChiTietPhieuType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="KE" type="KeType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
