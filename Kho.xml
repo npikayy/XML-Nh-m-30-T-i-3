@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KHO>
+
+    <Ke>
+        <MaKe>K001</MaKe>
+        <MaSP>SP001</MaSP>
+        <TonKho>50</TonKho>
+        <ViTri>Khu A - Tầng 1</ViTri>
+        <NgayCapNhat>2024-01-15</NgayCapNhat>
+    </Ke>
+    <Ke>
+        <MaKe>K002</MaKe>
+        <MaSP>SP002</MaSP>
+        <TonKho>25</TonKho>
+        <ViTri>Khu B - Tầng 2</ViTri>
+        <NgayCapNhat>2024-01-16</NgayCapNhat>
+    </Ke>
+    <Ke>
+        <MaKe>K003</MaKe>
+        <MaSP>SP003</MaSP>
+        <TonKho>100</TonKho>
+        <ViTri>Khu C - Tầng 1</ViTri>
+        <NgayCapNhat>2024-01-14</NgayCapNhat>
+    </Ke>
+    <Ke>
+        <MaKe>K004</MaKe>
+        <MaSP>SP004</MaSP>
+        <TonKho>15</TonKho>
+        <ViTri>Khu A - Tầng 3</ViTri>
+        <NgayCapNhat>2024-01-17</NgayCapNhat>
+    </Ke>
+    <Ke>
+        <MaKe>K005</MaKe>
+        <MaSP>SP005</MaSP>
+        <TonKho>75</TonKho>
+        <ViTri>Khu D - Tầng 2</ViTri>
+        <NgayCapNhat>2024-01-13</NgayCapNhat>
+    </Ke>
+
+    <!-- Dữ liệu mẫu cho bảng DanhMục -->
+    <DanhMuc>
+        <MaDM>DM001</MaDM>
+        <TenDM>Điện Thoại</TenDM>
+        <MoTa>Các loại điện thoại thông minh</MoTa>
+    </DanhMuc>
+    <DanhMuc>
+        <MaDM>DM002</MaDM>
+        <TenDM>Laptop</TenDM>
+        <MoTa>Máy tính xách tay các loại</MoTa>
+    </DanhMuc>
+    <DanhMuc>
+        <MaDM>DM003</MaDM>
+        <TenDM>Tablet</TenDM>
+        <MoTa>Máy tính bảng</MoTa>
+    </DanhMuc>
+    <DanhMuc>
+        <MaDM>DM004</MaDM>
+        <TenDM>Phụ Kiện</TenDM>
+        <MoTa>Phụ kiện điện tử</MoTa>
+    </DanhMuc>
+    <DanhMuc>
+        <MaDM>DM005</MaDM>
+        <TenDM>Đồ Gia Dụng</TenDM>
+        <MoTa>Thiết bị gia dụng thông minh</MoTa>
+    </DanhMuc>
+
+    <!-- Dữ liệu mẫu cho bảng SanPham -->
+    <SanPham>
+        <MaSp>SP001</MaSp>
+        <TenSp>iPhone 15 Pro</TenSp>
+        <MoTa>Điện thoại Apple flagship 2024</MoTa>
+        <GiaNhap>22000000</GiaNhap>
+        <GiaBan>25900000</GiaBan>
+        <KichThuoc>6.1 inch</KichThuoc>
+        <MauSac>Titan Xanh</MauSac>
+        <ChatLieu>Titanium</ChatLieu>
+        <MaDM>DM001</MaDM>
+        <NgayCapNhat>2024-01-10</NgayCapNhat>
+        <Hang>Apple</Hang>
+    </SanPham>
+    <SanPham>
+        <MaSp>SP002</MaSp>
+        <TenSp>Samsung Galaxy S24</TenSp>
+        <MoTa>Điện thoại Android cao cấp</MoTa>
+        <GiaNhap>18000000</GiaNhap>
+        <GiaBan>21900000</GiaBan>
+        <KichThuoc>6.2 inch</KichThuoc>
+        <MauSac>Đen</MauSac>
+        <ChatLieu>Kính</ChatLieu>
+        <MaDM>DM001</MaDM>
+        <NgayCapNhat>2024-01-12</NgayCapNhat>
+        <Hang>Samsung</Hang>
+    </SanPham>
+    <SanPham>
+        <MaSp>SP003</MaSp>
+        <TenSp>MacBook Air M2</TenSp>
+        <MoTa>Laptop Apple siêu mỏng nhẹ</MoTa>
+        <GiaNhap>28000000</GiaNhap>
+        <GiaBan>32900000</GiaBan>
+        <KichThuoc>13.6 inch</KichThuoc>
+        <MauSac>Bạc</MauSac>
+        <ChatLieu>Nhôm</ChatLieu>
+        <MaDM>DM002</MaDM>
+        <NgayCapNhat>2024-01-08</NgayCapNhat>
+        <Hang>Apple</Hang>
+    </SanPham>
+    <SanPham>
+        <MaSp>SP004</MaSp>
+        <TenSp>iPad Pro 12.9</TenSp>
+        <MoTa>Tablet chuyên nghiệp</MoTa>
+        <GiaNhap>25000000</GiaNhap>
+        <GiaBan>28900000</GiaBan>
+        <KichThuoc>12.9 inch</KichThuoc>
+        <MauSac>Xám</MauSac>
+        <ChatLieu>Nhôm</ChatLieu>
+        <MaDM>DM003</MaDM>
+        <NgayCapNhat>2024-01-11</NgayCapNhat>
+        <Hang>Apple</Hang>
+    </SanPham>
+    <SanPham>
+        <MaSp>SP005</MaSp>
+        <TenSp>Tai nghe AirPods Pro</TenSp>
+        <MoTa>Tai nghe không dây chống ồn</MoTa>
+        <GiaNhap>5500000</GiaNhap>
+        <GiaBan>6990000</GiaBan>
+        <KichThuoc>Nhỏ gọn</KichThuoc>
+        <MauSac>Trắng</MauSac>
+        <ChatLieu>Nhựa</ChatLieu>
+        <MaDM>DM004</MaDM>
+        <NgayCapNhat>2024-01-09</NgayCapNhat>
+        <Hang>Apple</Hang>
+    </SanPham>
+
+    <!-- Dữ liệu mẫu cho bảng ChiTietPhieu -->
+    <ChiTietPhieu>
+        <MaChiTiet>CT001</MaChiTiet>
+        <MaPhieu>PN001</MaPhieu>
+        <MaSP>SP001</MaSP>
+        <SoLuong>10</SoLuong>
+        <Gia>22000000</Gia>
+    </ChiTietPhieu>
+    <ChiTietPhieu>
+        <MaChiTiet>CT002</MaChiTiet>
+        <MaPhieu>PN001</MaPhieu>
+        <MaSP>SP002</MaSP>
+        <SoLuong>15</SoLuong>
+        <Gia>18000000</Gia>
+    </ChiTietPhieu>
+    <ChiTietPhieu>
+        <MaChiTiet>CT003</MaChiTiet>
+        <MaPhieu>PN002</MaPhieu>
+        <MaSP>SP003</MaSP>
+        <SoLuong>5</SoLuong>
+        <Gia>28000000</Gia>
+    </ChiTietPhieu>
+    <ChiTietPhieu>
+        <MaChiTiet>CT004</MaChiTiet>
+        <MaPhieu>PX001</MaPhieu>
+        <MaSP>SP001</MaSP>
+        <SoLuong>2</SoLuong>
+        <Gia>25900000</Gia>
+    </ChiTietPhieu>
+    <ChiTietPhieu>
+        <MaChiTiet>CT005</MaChiTiet>
+        <MaPhieu>PX002</MaPhieu>
+        <MaSP>SP004</MaSP>
+        <SoLuong>3</SoLuong>
+        <Gia>28900000</Gia>
+    </ChiTietPhieu>
+
+    <!-- Dữ liệu mẫu cho bảng Phieu -->
+    <Phieu>
+        <MaPhieu>PN001</MaPhieu>
+        <Ngay>2024-01-15</Ngay>
+        <MaNCC>NCC001</MaNCC>
+        <TongGiaTri>610000000</TongGiaTri>
+        <MoTa>Nhập hàng đầu tháng 1</MoTa>
+        <TenNhanVien>Nguyễn Văn An</TenNhanVien>
+        <LoaiPhieu>nhap</LoaiPhieu>
+    </Phieu>
+    <Phieu>
+        <MaPhieu>PN002</MaPhieu>
+        <Ngay>2024-01-16</Ngay>
+        <MaNCC>NCC002</MaNCC>
+        <TongGiaTri>140000000</TongGiaTri>
+        <MoTa>Nhập laptop MacBook</MoTa>
+        <TenNhanVien>Trần Thị Bình</TenNhanVien>
+        <LoaiPhieu>nhap</LoaiPhieu>
+    </Phieu>
+    <Phieu>
+        <MaPhieu>PX001</MaPhieu>
+        <Ngay>2024-01-17</Ngay>
+        <MaNCC></MaNCC>
+        <TongGiaTri>51800000</TongGiaTri>
+        <MoTa>Xuất bán cho khách lẻ</MoTa>
+        <TenNhanVien>Lê Văn Cường</TenNhanVien>
+        <LoaiPhieu>xuat</LoaiPhieu>
+    </Phieu>
+    <Phieu>
+        <MaPhieu>PX002</MaPhieu>
+        <Ngay>2024-01-18</Ngay>
+        <MaNCC></MaNCC>
+        <TongGiaTri>86700000</TongGiaTri>
+        <MoTa>Xuất bán sỉ</MoTa>
+        <TenNhanVien>Phạm Thị Dung</TenNhanVien>
+        <LoaiPhieu>xuat</LoaiPhieu>
+    </Phieu>
+    <Phieu>
+        <MaPhieu>PN003</MaPhieu>
+        <Ngay>2024-01-19</Ngay>
+        <MaNCC>NCC003</MaNCC>
+        <TongGiaTri>34950000</TongGiaTri>
+        <MoTa>Nhập phụ kiện</MoTa>
+        <TenNhanVien>Nguyễn Văn An</TenNhanVien>
+        <LoaiPhieu>nhap</LoaiPhieu>
+    </Phieu>
+
+    <!-- Dữ liệu mẫu cho bảng NhaCungCap -->
+    <NhaCungCap>
+        <MaNCC>NCC001</MaNCC>
+        <TenNCC>Công ty TNHH Apple Việt Nam</TenNCC>
+        <DiaChi>TP. Hồ Chí Minh</DiaChi>
+        <SoDienThoai>02838123456</SoDienThoai>
+        <Email>contact@apple.com.vn</Email>
+    </NhaCungCap>
+    <NhaCungCap>
+        <MaNCC>NCC002</MaNCC>
+        <TenNCC>Công ty Samsung Electronics</TenNCC>
+        <DiaChi>Hà Nội</DiaChi>
+        <SoDienThoai>02438567890</SoDienThoai>
+        <Email>info@samsung.com.vn</Email>
+    </NhaCungCap>
+    <NhaCungCap>
+        <MaNCC>NCC003</MaNCC>
+        <TenNCC>Công ty Phụ Kiện Số</TenNCC>
+        <DiaChi>Đà Nẵng</DiaChi>
+        <SoDienThoai>02363555555</SoDienThoai>
+        <Email>sales@phukienso.vn</Email>
+    </NhaCungCap>
+    <NhaCungCap>
+        <MaNCC>NCC004</MaNCC>
+        <TenNCC>Công ty Máy Tính Việt</TenNCC>
+        <DiaChi>TP. Hồ Chí Minh</DiaChi>
+        <SoDienThoai>02838666666</SoDienThoai>
+        <Email>contact@maytinhviet.com</Email>
+    </NhaCungCap>
+    <NhaCungCap>
+        <MaNCC>NCC005</MaNCC>
+        <TenNCC>Công ty Thiết Bị Thông Minh</TenNCC>
+        <DiaChi>Cần Thơ</DiaChi>
+        <SoDienThoai>02923877777</SoDienThoai>
+        <Email>info@thietbithongminh.vn</Email>
+    </NhaCungCap>
+
+    <!-- Dữ liệu mẫu cho bảng NhanVien -->
+    <NhanVien>
+        <MaNV>NV001</MaNV>
+        <TenNV>Nguyễn Văn An</TenNV>
+        <SoDienThoai>0903111111</SoDienThoai>
+        <TaiKhoan>nvan</TaiKhoan>
+        <MatKhau>123456</MatKhau>
+    </NhanVien>
+    <NhanVien>
+        <MaNV>NV002</MaNV>
+        <TenNV>Trần Thị Bình</TenNV>
+        <SoDienThoai>0903222222</SoDienThoai>
+        <TaiKhoan>ttbinh</TaiKhoan>
+        <MatKhau>123456</MatKhau>
+    </NhanVien>
+    <NhanVien>
+        <MaNV>NV003</MaNV>
+        <TenNV>Lê Văn Cường</TenNV>
+        <SoDienThoai>0903333333</SoDienThoai>
+        <TaiKhoan>lcuong</TaiKhoan>
+        <MatKhau>123456</MatKhau>
+    </NhanVien>
+    <NhanVien>
+        <MaNV>NV004</MaNV>
+        <TenNV>Phạm Thị Dung</TenNV>
+        <SoDienThoai>0903444444</SoDienThoai>
+        <TaiKhoan>ptdung</TaiKhoan>
+        <MatKhau>123456</MatKhau>
+    </NhanVien>
+    <NhanVien>
+        <MaNV>NV005</MaNV>
+        <TenNV>Hoàng Văn Em</TenNV>
+        <SoDienThoai>0903555555</SoDienThoai>
+        <TaiKhoan>hvem</TaiKhoan>
+        <MatKhau>123456</MatKhau>
+    </NhanVien>
+</KHO>
