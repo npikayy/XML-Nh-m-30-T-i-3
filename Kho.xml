@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <!DOCTYPE QUANLYKHO SYSTEM "quanlykho.dtd"> -->
 <QUANLYKHO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="quanlykho.xsd">
 
@@ -240,6 +239,22 @@
     <CHITIETPHIEU MACTP="CT005" MAPHIEU="PX002" MASP="SP004">
         <SOLUONG>3</SOLUONG>
         <GIA>28900000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU MACTP="CT006" MAPHIEU="PN003" MASP="SP005">
+        <SOLUONG>5</SOLUONG>
+        <GIA>6990000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU MACTP="CT007" MAPHIEU="PX003" MASP="SP006">
+        <SOLUONG>10</SOLUONG>
+        <GIA>1200000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU MACTP="CT008" MAPHIEU="PN004" MASP="SP007">
+        <SOLUONG>1</SOLUONG>
+        <GIA>36000000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU MACTP="CT009" MAPHIEU="PN005" MASP="SP005">
+        <SOLUONG>10</SOLUONG>
+        <GIA>6990000</GIA>
     </CHITIETPHIEU>
 
     <!-- Dữ liệu mẫu cho bảng Ke -->
