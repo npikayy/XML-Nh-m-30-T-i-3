@@ -107,6 +107,60 @@
         <xs:element name="KE" type="KeType" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
+    <xs:key name="keyDanhMuc">
+      <xs:selector xpath="DANHMUC"/>
+      <xs:field xpath="@MADM"/>
+    </xs:key>
+    <xs:key name="keySanPham">
+      <xs:selector xpath="SANPHAM"/>
+      <xs:field xpath="@MASP"/>
+    </xs:key>
+    <xs:key name="keyNhaCungCap">
+      <xs:selector xpath="NHACUNGCAP"/>
+      <xs:field xpath="@MANCC"/>
+    </xs:key>
+    <xs:key name="keyNhanVien">
+      <xs:selector xpath="NHANVIEN"/>
+      <xs:field xpath="@MANV"/>
+    </xs:key>
+    <xs:key name="keyPhieu">
+      <xs:selector xpath="PHIEU"/>
+      <xs:field xpath="@MAPHIEU"/>
+    </xs:key>
+    <xs:key name="keyChiTietPhieu">
+      <xs:selector xpath="CHITIETPHIEU"/>
+      <xs:field xpath="@MACTP"/>
+    </xs:key>
+    <xs:key name="keyKe">
+      <xs:selector xpath="KE"/>
+      <xs:field xpath="@MAKE"/>
+    </xs:key>
+    <xs:keyref name="refSanPhamToDanhMuc" refer="keyDanhMuc">
+      <xs:selector xpath="SANPHAM"/>
+      <xs:field xpath="@MADM"/>
+    </xs:keyref>
+    <xs:keyref name="refPhieuToNhaCungCap" refer="keyNhaCungCap">
+      <xs:selector xpath="PHIEU"/>
+      <xs:field xpath="@MANCC"/>
+    </xs:keyref>
+    <xs:keyref name="refPhieuToNhanVien" refer="keyNhanVien">
+      <xs:selector xpath="PHIEU"/>
+      <xs:field xpath="@MANV"/>
+    </xs:keyref>
+    <xs:keyref name="refChiTietPhieuToPhieu" refer="keyPhieu">
+      <xs:selector xpath="CHITIETPHIEU"/>
+      <xs:field xpath="@MAPHIEU"/>
+    </xs:keyref>
+    <xs:keyref name="refChiTietPhieuToSanPham" refer="keySanPham">
+      <xs:selector xpath="CHITIETPHIEU"/>
+      <xs:field xpath="@MASP"/>
+    </xs:keyref>
+    <xs:keyref name="refKeToSanPham" refer="keySanPham">
+      <xs:selector xpath="KE"/>
+      <xs:field xpath="@MASP"/>
+    </xs:keyref>
   </xs:element>
+
+
 
 </xs:schema>
