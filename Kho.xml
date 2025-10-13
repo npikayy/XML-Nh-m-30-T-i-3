@@ -24,6 +24,7 @@
         <MOTA>Thiết bị gia dụng thông minh</MOTA>
     </DANHMUC>
 
+    
     <!-- Dữ liệu mẫu cho bảng SanPham -->
     <SANPHAM MASP="SP001" MADM="DM001">
         <TENSP>iPhone 15 Pro</TENSP>
