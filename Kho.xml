@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <!DOCTYPE QUANLYKHO SYSTEM "quanlykho.dtd"> -->
 <QUANLYKHO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation="quanlykho.xsd">
-    
+    xsi:noNamespaceSchemaLocation="quanlykho.xsd">
+
     <!-- Dữ liệu mẫu cho bảng DanhMuc -->
     <DANHMUC MADM="DM001">
         <TENDM>Điện Thoại</TENDM>
@@ -24,6 +23,7 @@
         <TENDM>Đồ Gia Dụng</TENDM>
         <MOTA>Thiết bị gia dụng thông minh</MOTA>
     </DANHMUC>
+
     
     <!-- Dữ liệu mẫu cho bảng SanPham -->
     <SANPHAM MASP="SP001" MADM="DM001">
@@ -76,7 +76,28 @@
         <CHATLIEU>Nhựa</CHATLIEU>
         <HANG>Apple</HANG>
     </SANPHAM>
-    
+    <SANPHAM MASP="SP006" MADM="DM001">
+        <TENSP>Điện thoại Galaxy A14</TENSP>
+        <MOTA>Điện thoại Samsung tầm trung</MOTA>
+        <GIANHAP>1000000</GIANHAP>
+        <GIABAN> 1200000</GIABAN>
+        <KICHTHUOC> 6.6 inch</KICHTHUOC>
+        <MAUSAC> Đen</MAUSAC>
+        <CHATLIEU> Nhựa</CHATLIEU>
+        <HANG> Samsung</HANG>
+    </SANPHAM>
+    <SANPHAM MASP="SP007" MADM="DM001">
+        <TENSP>Điện thoại iPhone 15 Pro</TENSP>
+        <MOTA>Điện thoại Apple</MOTA>
+        <GIANHAP>36000000</GIANHAP>
+        <GIABAN>38000000</GIABAN>
+        <KICHTHUOC>8.1 inch</KICHTHUOC>
+        <MAUSAC>Đỏ</MAUSAC>
+        <CHATLIEU>TiTan</CHATLIEU>
+        <HANG>Apple</HANG>
+    </SANPHAM>
+
+
     <!-- Dữ liệu mẫu cho bảng NhaCungCap -->
     <NHACUNGCAP MANCC="NCC001">
         <TENNCC>Công ty TNHH Apple Việt Nam</TENNCC>
@@ -108,7 +129,7 @@
         <SODT>02923877777</SODT>
         <EMAIL>info@thietbithongminh.vn</EMAIL>
     </NHACUNGCAP>
-    
+
     <!-- Dữ liệu mẫu cho bảng NhanVien -->
     <NHANVIEN MANV="NV001">
         <TENNV>Nguyễn Văn An</TENNV>
@@ -140,7 +161,7 @@
         <VITRI>Nhân viên kho</VITRI>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
-    
+
     <!-- Dữ liệu mẫu cho bảng Phieu -->
     <PHIEU MAPHIEU="PN001" MANCC="NCC001" MANV="NV001">
         <NGAYNHAP>2024-01-15</NGAYNHAP>
@@ -177,7 +198,28 @@
         <TENNV>Nguyễn Văn An</TENNV>
         <LOAIPHIEU>nhap</LOAIPHIEU>
     </PHIEU>
-    
+    <PHIEU MAPHIEU="PX003" MANCC="NCC002" MANV="NV005">
+            <NGAYNHAP>2024-01-20</NGAYNHAP>
+            <TONGTIEN>12000000</TONGTIEN>
+            <NGHI>Xuất bán điện thoại Galaxy A14</NGHI>
+            <TENNV>Hoàng Văn Em</TENNV>
+            <LOAIPHIEU>xuat</LOAIPHIEU>
+    </PHIEU>
+    <PHIEU MAPHIEU="PN004" MANCC="NCC001" MANV="NV001">
+            <NGAYNHAP>2024-01-21</NGAYNHAP>
+            <TONGTIEN>36000000</TONGTIEN>
+            <NGHI>Nhập thêm iPhone 15 Pro</NGHI>
+            <TENNV>Nguyễn Văn An</TENNV>
+            <LOAIPHIEU>nhap</LOAIPHIEU>
+    </PHIEU>
+    <PHIEU MAPHIEU="PN005" MANCC="NCC004" MANV="NV002">
+            <NGAYNHAP>2024-01-22</NGAYNHAP>
+            <TONGTIEN>75000000</TONGTIEN>
+            <NGHI>Nhập thêm phụ kiện</NGHI>
+            <TENNV>Trần Thị Bình</TENNV>
+            <LOAIPHIEU>nhap</LOAIPHIEU>
+    </PHIEU>
+
     <!-- Dữ liệu mẫu cho bảng ChiTietPhieu -->
     <CHITIETPHIEU MACTP="CT001" MAPHIEU="PN001" MASP="SP001">
         <SOLUONG>10</SOLUONG>
@@ -199,7 +241,23 @@
         <SOLUONG>3</SOLUONG>
         <GIA>28900000</GIA>
     </CHITIETPHIEU>
-    
+    <CHITIETPHIEU MACTP="CT006" MAPHIEU="PN003" MASP="SP005">
+        <SOLUONG>5</SOLUONG>
+        <GIA>6990000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU MACTP="CT007" MAPHIEU="PX003" MASP="SP006">
+        <SOLUONG>10</SOLUONG>
+        <GIA>1200000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU MACTP="CT008" MAPHIEU="PN004" MASP="SP007">
+        <SOLUONG>1</SOLUONG>
+        <GIA>36000000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU MACTP="CT009" MAPHIEU="PN005" MASP="SP005">
+        <SOLUONG>10</SOLUONG>
+        <GIA>6990000</GIA>
+    </CHITIETPHIEU>
+
     <!-- Dữ liệu mẫu cho bảng Ke -->
     <KE MAKE="K001" MASP="SP001">
         <TONKHO>50</TONKHO>
