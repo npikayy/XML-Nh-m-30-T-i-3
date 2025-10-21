@@ -25,8 +25,8 @@
     </DANHMUC>
     <DANHMUC>
         <MADM>DM005</MADM>
-        <TENDM>Đồ Gia Dụng</TENDM>
-        <MOTA>Thiết bị gia dụng thông minh</MOTA>
+        <TENDM>Màn Hình</TENDM>
+        <MOTA>Màn hình máy tính và TV</MOTA>
     </DANHMUC>
 
     <!-- Dữ liệu mẫu cho bảng SanPham -->
@@ -80,15 +80,27 @@
     </SANPHAM>
     <SANPHAM>
         <MASP>SP005</MASP>
-        <MADM>DM004</MADM>
-        <TENSP>Tai nghe AirPods Pro</TENSP>
-        <MOTA>Tai nghe không dây chống ồn</MOTA>
+        <MADM>DM005</MADM>
+        <TENSP>Màn hình Dell 27 inch</TENSP>
+        <MOTA>Màn hình gaming 144Hz</MOTA>
         <GIANHAP>5500000</GIANHAP>
         <GIABAN>6990000</GIABAN>
-        <KICHTHUOC>Nhỏ gọn</KICHTHUOC>
-        <MAUSAC>Trắng</MAUSAC>
+        <KICHTHUOC>27 inch</KICHTHUOC>
+        <MAUSAC>Đen</MAUSAC>
         <CHATLIEU>Nhựa</CHATLIEU>
-        <HANG>Apple</HANG>
+        <HANG>Dell</HANG>
+    </SANPHAM>
+    <SANPHAM>
+        <MASP>SP006</MASP>
+        <MADM>DM005</MADM>
+        <TENSP>TV Samsung 55 inch</TENSP>
+        <MOTA>Smart TV 4K UHD</MOTA>
+        <GIANHAP>12000000</GIANHAP>
+        <GIABAN>14900000</GIABAN>
+        <KICHTHUOC>55 inch</KICHTHUOC>
+        <MAUSAC>Đen</MAUSAC>
+        <CHATLIEU>Nhựa</CHATLIEU>
+        <HANG>Samsung</HANG>
     </SANPHAM>
 
     <!-- Dữ liệu mẫu cho bảng NhaCungCap -->
@@ -133,35 +145,35 @@
         <MANV>NV001</MANV>
         <TENNV>Nguyễn Văn An</TENNV>
         <SODT>0903111111</SODT>
-        <CHUCVU>Quản lý kho</CHUCVU>
+        <TAIKHOAN>an123</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN>
         <MANV>NV002</MANV>
         <TENNV>Trần Thị Bình</TENNV>
         <SODT>0903222222</SODT>
-        <CHUCVU>Nhân viên nhập hàng</CHUCVU>
+        <TAIKHOAN>tranbinh</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN>
         <MANV>NV003</MANV>
         <TENNV>Lê Văn Cường</TENNV>
         <SODT>0903333333</SODT>
-        <CHUCVU>Nhân viên xuất hàng</CHUCVU>
+        <TAIKHOAN>lecuong</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN>
         <MANV>NV004</MANV>
         <TENNV>Phạm Thị Dung</TENNV>
         <SODT>0903444444</SODT>
-        <CHUCVU>Nhân viên kho</CHUCVU>
+        <TAIKHOAN>phamdung</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN>
         <MANV>NV005</MANV>
         <TENNV>Hoàng Văn Em</TENNV>
         <SODT>0903555555</SODT>
-        <CHUCVU>Nhân viên kho</CHUCVU>
+        <TAIKHOAN>hoangem</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
 
@@ -208,11 +220,11 @@
     </PHIEU>
     <PHIEU>
         <MAPHIEU>PN003</MAPHIEU>
-        <MANCC>NCC003</MANCC>
+        <MANCC>NCC004</MANCC>
         <MANV>NV001</MANV>
         <NGAYNHAP>2024-01-19</NGAYNHAP>
         <TONGTIEN>34950000</TONGTIEN>
-        <NGHI>Nhập phụ kiện</NGHI>
+        <NGHI>Nhập màn hình</NGHI>
         <TENNV>Nguyễn Văn An</TENNV>
         <LOAIPHIEU>nhap</LOAIPHIEU>
     </PHIEU>
@@ -253,6 +265,13 @@
         <SOLUONG>3</SOLUONG>
         <GIA>28900000</GIA>
     </CHITIETPHIEU>
+    <CHITIETPHIEU>
+        <MACTP>CT006</MACTP>
+        <MAPHIEU>PN003</MAPHIEU>
+        <MASP>SP005</MASP>
+        <SOLUONG>5</SOLUONG>
+        <GIA>5500000</GIA>
+    </CHITIETPHIEU>
 
     <!-- Dữ liệu mẫu cho bảng Ke -->
     <KE>
@@ -289,5 +308,12 @@
         <TONKHO>75</TONKHO>
         <VITRI>Khu D - Tầng 2</VITRI>
         <NGAYCAPNHAT>2024-01-13</NGAYCAPNHAT>
+    </KE>
+    <KE>
+        <MAKE>K006</MAKE>
+        <MASP>SP006</MASP>
+        <TONKHO>30</TONKHO>
+        <VITRI>Khu E - Tầng 1</VITRI>
+        <NGAYCAPNHAT>2024-01-20</NGAYCAPNHAT>
     </KE>
 </QUANLYKHO>

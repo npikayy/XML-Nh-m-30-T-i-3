@@ -49,6 +49,21 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="KichThuocType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]+(\.[0-9]+)?\s*inch" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TaiKhoanType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="3" />
+      <xs:maxLength value="50" />
+      <xs:pattern value="[a-zA-Z0-9_]+" />
+    </xs:restriction>
+  </xs:simpleType>
+
   <!-- DANHMUC -->
   <xs:complexType name="DanhMucType">
     <xs:sequence>
@@ -67,7 +82,7 @@
       <xs:element name="MOTA" type="MoTaType" minOccurs="0" />
       <xs:element name="GIANHAP" type="GiaType" />
       <xs:element name="GIABAN" type="GiaType" />
-      <xs:element name="KICHTHUOC" type="xs:string" minOccurs="0" />
+      <xs:element name="KICHTHUOC" type="KichThuocType" />
       <xs:element name="MAUSAC" type="xs:string" minOccurs="0" />
       <xs:element name="CHATLIEU" type="xs:string" minOccurs="0" />
       <xs:element name="HANG" type="xs:string" minOccurs="0" />
@@ -91,8 +106,12 @@
       <xs:element name="MANV" type="xs:string" />
       <xs:element name="TENNV" type="TenType" />
       <xs:element name="SODT" type="SoDienThoaiType" />
-      <xs:element name="CHUCVU" type="xs:string" />
-      <xs:element name="MATKHAU" type="xs:string" />
+      <xs:element name="TAIKHOAN" type="TaiKhoanType" />
+      <xs:element name="MATKHAU" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Mật khẩu phải có ít nhất 6 ký tự</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
 
@@ -181,6 +200,12 @@
       <xs:selector xpath="KE" />
       <xs:field xpath="MAKE" />
     </xs:key>
+
+    <!-- Ràng buộc duy nhất cho tài khoản -->
+    <xs:unique name="uniqueTaiKhoan">
+      <xs:selector xpath="NHANVIEN" />
+      <xs:field xpath="TAIKHOAN" />
+    </xs:unique>
 
     <!-- Khóa ngoại -->
     <xs:keyref name="fkSanPhamDanhMuc" refer="pkDanhMuc">
