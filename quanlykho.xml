@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUANLYKHO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="quanlykho.xsd">
+
+    <!-- Dữ liệu mẫu cho bảng DanhMuc -->
+    <DANHMUC>
+        <MADM>DM001</MADM>
+        <TENDM>Điện Thoại</TENDM>
+        <MOTA>Các loại điện thoại thông minh</MOTA>
+    </DANHMUC>
+    <DANHMUC>
+        <MADM>DM002</MADM>
+        <TENDM>Laptop</TENDM>
+        <MOTA>Máy tính xách tay các loại</MOTA>
+    </DANHMUC>
+    <DANHMUC>
+        <MADM>DM003</MADM>
+        <TENDM>Tablet</TENDM>
+        <MOTA>Máy tính bảng</MOTA>
+    </DANHMUC>
+    <DANHMUC>
+        <MADM>DM004</MADM>
+        <TENDM>Phụ Kiện</TENDM>
+        <MOTA>Phụ kiện điện tử</MOTA>
+    </DANHMUC>
+    <DANHMUC>
+        <MADM>DM005</MADM>
+        <TENDM>Màn Hình</TENDM>
+        <MOTA>Màn hình máy tính và TV</MOTA>
+    </DANHMUC>
+
+    <!-- Dữ liệu mẫu cho bảng SanPham -->
+    <SANPHAM>
+        <MASP>SP001</MASP>
+        <MADM>DM001</MADM>
+        <TENSP>iPhone 15 Pro</TENSP>
+        <MOTA>Điện thoại Apple flagship 2024</MOTA>
+        <GIANHAP>22000000</GIANHAP>
+        <GIABAN>25900000</GIABAN>
+        <KICHTHUOC>6.1 inch</KICHTHUOC>
+        <MAUSAC>Titan Xanh</MAUSAC>
+        <CHATLIEU>Titanium</CHATLIEU>
+        <HANG>Apple</HANG>
+    </SANPHAM>
+    <SANPHAM>
+        <MASP>SP002</MASP>
+        <MADM>DM001</MADM>
+        <TENSP>Samsung Galaxy S24</TENSP>
+        <MOTA>Điện thoại Android cao cấp</MOTA>
+        <GIANHAP>18000000</GIANHAP>
+        <GIABAN>21900000</GIABAN>
+        <KICHTHUOC>6.2 inch</KICHTHUOC>
+        <MAUSAC>Đen</MAUSAC>
+        <CHATLIEU>Kính</CHATLIEU>
+        <HANG>Samsung</HANG>
+    </SANPHAM>
+    <SANPHAM>
+        <MASP>SP003</MASP>
+        <MADM>DM002</MADM>
+        <TENSP>MacBook Air M2</TENSP>
+        <MOTA>Laptop Apple siêu mỏng nhẹ</MOTA>
+        <GIANHAP>28000000</GIANHAP>
+        <GIABAN>32900000</GIABAN>
+        <KICHTHUOC>13.6 inch</KICHTHUOC>
+        <MAUSAC>Bạc</MAUSAC>
+        <CHATLIEU>Nhôm</CHATLIEU>
+        <HANG>Apple</HANG>
+    </SANPHAM>
+    <SANPHAM>
+        <MASP>SP004</MASP>
+        <MADM>DM003</MADM>
+        <TENSP>iPad Pro 12.9</TENSP>
+        <MOTA>Tablet chuyên nghiệp</MOTA>
+        <GIANHAP>25000000</GIANHAP>
+        <GIABAN>28900000</GIABAN>
+        <KICHTHUOC>12.9 inch</KICHTHUOC>
+        <MAUSAC>Xám</MAUSAC>
+        <CHATLIEU>Nhôm</CHATLIEU>
+        <HANG>Apple</HANG>
+    </SANPHAM>
+    <SANPHAM>
+        <MASP>SP005</MASP>
+        <MADM>DM005</MADM>
+        <TENSP>Màn hình Dell 27 inch</TENSP>
+        <MOTA>Màn hình gaming 144Hz</MOTA>
+        <GIANHAP>5500000</GIANHAP>
+        <GIABAN>6990000</GIABAN>
+        <KICHTHUOC>27 inch</KICHTHUOC>
+        <MAUSAC>Đen</MAUSAC>
+        <CHATLIEU>Nhựa</CHATLIEU>
+        <HANG>Dell</HANG>
+    </SANPHAM>
+    <SANPHAM>
+        <MASP>SP006</MASP>
+        <MADM>DM005</MADM>
+        <TENSP>TV Samsung 55 inch</TENSP>
+        <MOTA>Smart TV 4K UHD</MOTA>
+        <GIANHAP>12000000</GIANHAP>
+        <GIABAN>14900000</GIABAN>
+        <KICHTHUOC>55 inch</KICHTHUOC>
+        <MAUSAC>Đen</MAUSAC>
+        <CHATLIEU>Nhựa</CHATLIEU>
+        <HANG>Samsung</HANG>
+    </SANPHAM>
+
+    <!-- Dữ liệu mẫu cho bảng NhaCungCap -->
+    <NHACUNGCAP>
+        <MANCC>NCC001</MANCC>
+        <TENNCC>Công ty TNHH Apple Việt Nam</TENNCC>
+        <DIACHI>TP. Hồ Chí Minh</DIACHI>
+        <SODT>02838123456</SODT>
+        <EMAIL>contact@apple.com.vn</EMAIL>
+    </NHACUNGCAP>
+    <NHACUNGCAP>
+        <MANCC>NCC002</MANCC>
+        <TENNCC>Công ty Samsung Electronics</TENNCC>
+        <DIACHI>Hà Nội</DIACHI>
+        <SODT>02438567890</SODT>
+        <EMAIL>info@samsung.com.vn</EMAIL>
+    </NHACUNGCAP>
+    <NHACUNGCAP>
+        <MANCC>NCC003</MANCC>
+        <TENNCC>Công ty Phụ Kiện Số</TENNCC>
+        <DIACHI>Đà Nẵng</DIACHI>
+        <SODT>02363555555</SODT>
+        <EMAIL>sales@phukienso.vn</EMAIL>
+    </NHACUNGCAP>
+    <NHACUNGCAP>
+        <MANCC>NCC004</MANCC>
+        <TENNCC>Công ty Máy Tính Việt</TENNCC>
+        <DIACHI>TP. Hồ Chí Minh</DIACHI>
+        <SODT>02838666666</SODT>
+        <EMAIL>contact@maytinhviet.com</EMAIL>
+    </NHACUNGCAP>
+    <NHACUNGCAP>
+        <MANCC>NCC005</MANCC>
+        <TENNCC>Công ty Thiết Bị Thông Minh</TENNCC>
+        <DIACHI>Cần Thơ</DIACHI>
+        <SODT>02923877777</SODT>
+        <EMAIL>info@thietbithongminh.vn</EMAIL>
+    </NHACUNGCAP>
+
+    <!-- Dữ liệu mẫu cho bảng NhanVien -->
+    <NHANVIEN>
+        <MANV>NV001</MANV>
+        <TENNV>Nguyễn Văn An</TENNV>
+        <SODT>0903111111</SODT>
+        <TAIKHOAN>an123</TAIKHOAN>
+        <MATKHAU>123456</MATKHAU>
+    </NHANVIEN>
+    <NHANVIEN>
+        <MANV>NV002</MANV>
+        <TENNV>Trần Thị Bình</TENNV>
+        <SODT>0903222222</SODT>
+        <TAIKHOAN>tranbinh</TAIKHOAN>
+        <MATKHAU>123456</MATKHAU>
+    </NHANVIEN>
+    <NHANVIEN>
+        <MANV>NV003</MANV>
+        <TENNV>Lê Văn Cường</TENNV>
+        <SODT>0903333333</SODT>
+        <TAIKHOAN>lecuong</TAIKHOAN>
+        <MATKHAU>123456</MATKHAU>
+    </NHANVIEN>
+    <NHANVIEN>
+        <MANV>NV004</MANV>
+        <TENNV>Phạm Thị Dung</TENNV>
+        <SODT>0903444444</SODT>
+        <TAIKHOAN>phamdung</TAIKHOAN>
+        <MATKHAU>123456</MATKHAU>
+    </NHANVIEN>
+    <NHANVIEN>
+        <MANV>NV005</MANV>
+        <TENNV>Hoàng Văn Em</TENNV>
+        <SODT>0903555555</SODT>
+        <TAIKHOAN>hoangem</TAIKHOAN>
+        <MATKHAU>123456</MATKHAU>
+    </NHANVIEN>
+
+    <!-- Dữ liệu mẫu cho bảng Phieu -->
+    <PHIEU>
+        <MAPHIEU>PN001</MAPHIEU>
+        <MANCC>NCC001</MANCC>
+        <MANV>NV001</MANV>
+        <NGAYNHAP>2024-01-15</NGAYNHAP>
+        <TONGTIEN>610000000</TONGTIEN>
+        <NGHI>Nhập hàng đầu tháng 1</NGHI>
+        <TENNV>Nguyễn Văn An</TENNV>
+        <LOAIPHIEU>nhap</LOAIPHIEU>
+    </PHIEU>
+    <PHIEU>
+        <MAPHIEU>PN002</MAPHIEU>
+        <MANCC>NCC002</MANCC>
+        <MANV>NV002</MANV>
+        <NGAYNHAP>2024-01-16</NGAYNHAP>
+        <TONGTIEN>140000000</TONGTIEN>
+        <NGHI>Nhập laptop MacBook</NGHI>
+        <TENNV>Trần Thị Bình</TENNV>
+        <LOAIPHIEU>nhap</LOAIPHIEU>
+    </PHIEU>
+    <PHIEU>
+        <MAPHIEU>PX001</MAPHIEU>
+        <MANCC>NCC001</MANCC>
+        <MANV>NV003</MANV>
+        <NGAYNHAP>2024-01-17</NGAYNHAP>
+        <TONGTIEN>51800000</TONGTIEN>
+        <NGHI>Xuất bán cho khách lẻ</NGHI>
+        <TENNV>Lê Văn Cường</TENNV>
+        <LOAIPHIEU>xuat</LOAIPHIEU>
+    </PHIEU>
+    <PHIEU>
+        <MAPHIEU>PX002</MAPHIEU>
+        <MANCC>NCC001</MANCC>
+        <MANV>NV004</MANV>
+        <NGAYNHAP>2024-01-18</NGAYNHAP>
+        <TONGTIEN>86700000</TONGTIEN>
+        <NGHI>Xuất bán sỉ</NGHI>
+        <TENNV>Phạm Thị Dung</TENNV>
+        <LOAIPHIEU>xuat</LOAIPHIEU>
+    </PHIEU>
+    <PHIEU>
+        <MAPHIEU>PN003</MAPHIEU>
+        <MANCC>NCC004</MANCC>
+        <MANV>NV001</MANV>
+        <NGAYNHAP>2024-01-19</NGAYNHAP>
+        <TONGTIEN>34950000</TONGTIEN>
+        <NGHI>Nhập màn hình</NGHI>
+        <TENNV>Nguyễn Văn An</TENNV>
+        <LOAIPHIEU>nhap</LOAIPHIEU>
+    </PHIEU>
+
+    <!-- Dữ liệu mẫu cho bảng ChiTietPhieu -->
+    <CHITIETPHIEU>
+        <MACTP>CT001</MACTP>
+        <MAPHIEU>PN001</MAPHIEU>
+        <MASP>SP001</MASP>
+        <SOLUONG>10</SOLUONG>
+        <GIA>22000000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU>
+        <MACTP>CT002</MACTP>
+        <MAPHIEU>PN001</MAPHIEU>
+        <MASP>SP002</MASP>
+        <SOLUONG>15</SOLUONG>
+        <GIA>18000000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU>
+        <MACTP>CT003</MACTP>
+        <MAPHIEU>PN002</MAPHIEU>
+        <MASP>SP003</MASP>
+        <SOLUONG>5</SOLUONG>
+        <GIA>28000000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU>
+        <MACTP>CT004</MACTP>
+        <MAPHIEU>PX001</MAPHIEU>
+        <MASP>SP001</MASP>
+        <SOLUONG>2</SOLUONG>
+        <GIA>25900000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU>
+        <MACTP>CT005</MACTP>
+        <MAPHIEU>PX002</MAPHIEU>
+        <MASP>SP004</MASP>
+        <SOLUONG>3</SOLUONG>
+        <GIA>28900000</GIA>
+    </CHITIETPHIEU>
+    <CHITIETPHIEU>
+        <MACTP>CT006</MACTP>
+        <MAPHIEU>PN003</MAPHIEU>
+        <MASP>SP005</MASP>
+        <SOLUONG>5</SOLUONG>
+        <GIA>5500000</GIA>
+    </CHITIETPHIEU>
+
+    <!-- Dữ liệu mẫu cho bảng Ke -->
+    <KE>
+        <MAKE>K001</MAKE>
+        <MASP>SP001</MASP>
+        <TONKHO>50</TONKHO>
+        <VITRI>Khu A - Tầng 1</VITRI>
+        <NGAYCAPNHAT>2024-01-15</NGAYCAPNHAT>
+    </KE>
+    <KE>
+        <MAKE>K002</MAKE>
+        <MASP>SP002</MASP>
+        <TONKHO>25</TONKHO>
+        <VITRI>Khu B - Tầng 2</VITRI>
+        <NGAYCAPNHAT>2024-01-16</NGAYCAPNHAT>
+    </KE>
+    <KE>
+        <MAKE>K003</MAKE>
+        <MASP>SP003</MASP>
+        <TONKHO>100</TONKHO>
+        <VITRI>Khu C - Tầng 1</VITRI>
+        <NGAYCAPNHAT>2024-01-14</NGAYCAPNHAT>
+    </KE>
+    <KE>
+        <MAKE>K004</MAKE>
+        <MASP>SP004</MASP>
+        <TONKHO>15</TONKHO>
+        <VITRI>Khu A - Tầng 3</VITRI>
+        <NGAYCAPNHAT>2024-01-17</NGAYCAPNHAT>
+    </KE>
+    <KE>
+        <MAKE>K005</MAKE>
+        <MASP>SP005</MASP>
+        <TONKHO>75</TONKHO>
+        <VITRI>Khu D - Tầng 2</VITRI>
+        <NGAYCAPNHAT>2024-01-13</NGAYCAPNHAT>
+    </KE>
+    <KE>
+        <MAKE>K006</MAKE>
+        <MASP>SP006</MASP>
+        <TONKHO>30</TONKHO>
+        <VITRI>Khu E - Tầng 1</VITRI>
+        <NGAYCAPNHAT>2024-01-20</NGAYCAPNHAT>
+    </KE>
+</QUANLYKHO>

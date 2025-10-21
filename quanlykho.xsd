@@ -4,163 +4,238 @@
   <!-- Kiểu dùng chung -->
   <xs:simpleType name="TenType">
     <xs:restriction base="xs:string">
-      <xs:minLength value="1"/>
+      <xs:minLength value="1" />
+      <xs:maxLength value="100" />
     </xs:restriction>
   </xs:simpleType>
+
   <xs:simpleType name="MoTaType">
-    <xs:restriction base="xs:string"/>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="500" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SoDienThoaiType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{10,11}" />
+      <xs:minLength value="10" />
+      <xs:maxLength value="11" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="EmailType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^@]+@[^\.]+\..+" />
+      <xs:maxLength value="100" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LoaiPhieuType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="nhap" />
+      <xs:enumeration value="xuat" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SoLuongType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="GiaType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="KichThuocType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]+(\.[0-9]+)?\s*inch" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TaiKhoanType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="3" />
+      <xs:maxLength value="50" />
+      <xs:pattern value="[a-zA-Z0-9_]+" />
+    </xs:restriction>
   </xs:simpleType>
 
   <!-- DANHMUC -->
   <xs:complexType name="DanhMucType">
     <xs:sequence>
-      <xs:element name="TENDM" type="TenType"/>
-      <xs:element name="MOTA" type="MoTaType"/>
+      <xs:element name="MADM" type="xs:string" />
+      <xs:element name="TENDM" type="TenType" />
+      <xs:element name="MOTA" type="MoTaType" minOccurs="0" />
     </xs:sequence>
-    <xs:attribute name="MADM" type="xs:ID" use="required"/>
   </xs:complexType>
 
   <!-- SANPHAM -->
   <xs:complexType name="SanPhamType">
     <xs:sequence>
-      <xs:element name="TENSP" type="TenType"/>
-      <xs:element name="MOTA" type="MoTaType"/>
-      <xs:element name="GIANHAP" type="xs:decimal"/>
-      <xs:element name="GIABAN" type="xs:decimal"/>
-      <xs:element name="KICHTHUOC" type="xs:string"/>
-      <xs:element name="MAUSAC" type="xs:string"/>
-      <xs:element name="CHATLIEU" type="xs:string"/>
-      <xs:element name="HANG" type="xs:string"/>
+      <xs:element name="MASP" type="xs:string" />
+      <xs:element name="MADM" type="xs:string" />
+      <xs:element name="TENSP" type="TenType" />
+      <xs:element name="MOTA" type="MoTaType" minOccurs="0" />
+      <xs:element name="GIANHAP" type="GiaType" />
+      <xs:element name="GIABAN" type="GiaType" />
+      <xs:element name="KICHTHUOC" type="KichThuocType" />
+      <xs:element name="MAUSAC" type="xs:string" minOccurs="0" />
+      <xs:element name="CHATLIEU" type="xs:string" minOccurs="0" />
+      <xs:element name="HANG" type="xs:string" minOccurs="0" />
     </xs:sequence>
-    <xs:attribute name="MASP" type="xs:ID" use="required"/>
-    <xs:attribute name="MADM" type="xs:IDREF" use="required"/>
   </xs:complexType>
 
   <!-- NHACUNGCAP -->
   <xs:complexType name="NhaCungCapType">
     <xs:sequence>
-      <xs:element name="TENNCC" type="TenType"/>
-      <xs:element name="DIACHI" type="xs:string"/>
-      <xs:element name="SODT" type="xs:string"/>
-      <xs:element name="EMAIL" type="xs:string"/>
+      <xs:element name="MANCC" type="xs:string" />
+      <xs:element name="TENNCC" type="TenType" />
+      <xs:element name="DIACHI" type="xs:string" />
+      <xs:element name="SODT" type="SoDienThoaiType" />
+      <xs:element name="EMAIL" type="EmailType" minOccurs="0" />
     </xs:sequence>
-    <xs:attribute name="MANCC" type="xs:ID" use="required"/>
   </xs:complexType>
 
   <!-- NHANVIEN -->
   <xs:complexType name="NhanVienType">
     <xs:sequence>
-      <xs:element name="TENNV" type="TenType"/>
-      <xs:element name="SODT" type="xs:string"/>
-      <xs:element name="VITRI" type="xs:string"/>
-      <xs:element name="MATKHAU" type="xs:string"/>
+      <xs:element name="MANV" type="xs:string" />
+      <xs:element name="TENNV" type="TenType" />
+      <xs:element name="SODT" type="SoDienThoaiType" />
+      <xs:element name="TAIKHOAN" type="TaiKhoanType" />
+      <xs:element name="MATKHAU" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Mật khẩu phải có ít nhất 6 ký tự</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
-    <xs:attribute name="MANV" type="xs:ID" use="required"/>
   </xs:complexType>
 
   <!-- PHIEU -->
   <xs:complexType name="PhieuType">
     <xs:sequence>
-      <xs:element name="NGAYNHAP" type="xs:string"/>
-      <xs:element name="TONGTIEN" type="xs:decimal"/>
-      <xs:element name="NGHI" type="xs:string"/>
-      <xs:element name="TENNV" type="TenType"/>
-      <xs:element name="LOAIPHIEU" type="xs:string"/>
+      <xs:element name="MAPHIEU" type="xs:string" />
+      <xs:element name="MANCC" type="xs:string" />
+      <xs:element name="MANV" type="xs:string" />
+      <xs:element name="NGAYNHAP" type="xs:date" />
+      <xs:element name="TONGTIEN" type="GiaType" />
+      <xs:element name="NGHI" type="xs:string" minOccurs="0" />
+      <xs:element name="TENNV" type="TenType" />
+      <xs:element name="LOAIPHIEU" type="LoaiPhieuType" />
     </xs:sequence>
-    <xs:attribute name="MAPHIEU" type="xs:ID" use="required"/>
-    <xs:attribute name="MANCC" type="xs:IDREF" use="required"/>
-    <xs:attribute name="MANV" type="xs:IDREF" use="required"/>
   </xs:complexType>
 
   <!-- CHITIETPHIEU -->
   <xs:complexType name="ChiTietPhieuType">
     <xs:sequence>
-      <xs:element name="SOLUONG" type="xs:integer"/>
-      <xs:element name="GIA" type="xs:decimal"/>
+      <xs:element name="MACTP" type="xs:string" />
+      <xs:element name="MAPHIEU" type="xs:string" />
+      <xs:element name="MASP" type="xs:string" />
+      <xs:element name="SOLUONG" type="SoLuongType" />
+      <xs:element name="GIA" type="GiaType" />
     </xs:sequence>
-    <xs:attribute name="MACTP" type="xs:ID" use="required"/>
-    <xs:attribute name="MAPHIEU" type="xs:IDREF" use="required"/>
-    <xs:attribute name="MASP" type="xs:IDREF" use="required"/>
   </xs:complexType>
 
   <!-- KE -->
   <xs:complexType name="KeType">
     <xs:sequence>
-      <xs:element name="TONKHO" type="xs:integer"/>
-      <xs:element name="VITRI" type="xs:string"/>
-      <xs:element name="NGAYCAPNHAT" type="xs:string"/>
+      <xs:element name="MAKE" type="xs:string" />
+      <xs:element name="MASP" type="xs:string" />
+      <xs:element name="TONKHO" type="SoLuongType" />
+      <xs:element name="VITRI" type="xs:string" />
+      <xs:element name="NGAYCAPNHAT" type="xs:date" />
     </xs:sequence>
-    <xs:attribute name="MAKE" type="xs:ID" use="required"/>
-    <xs:attribute name="MASP" type="xs:IDREF" use="required"/>
   </xs:complexType>
 
   <!-- QUANLYKHO -->
   <xs:element name="QUANLYKHO">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="DANHMUC" type="DanhMucType" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="SANPHAM" type="SanPhamType" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="NHACUNGCAP" type="NhaCungCapType" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="NHANVIEN" type="NhanVienType" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="PHIEU" type="PhieuType" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="CHITIETPHIEU" type="ChiTietPhieuType" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="KE" type="KeType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="DANHMUC" type="DanhMucType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="SANPHAM" type="SanPhamType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="NHACUNGCAP" type="NhaCungCapType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="NHANVIEN" type="NhanVienType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="PHIEU" type="PhieuType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="CHITIETPHIEU" type="ChiTietPhieuType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="KE" type="KeType" minOccurs="0" maxOccurs="unbounded" />
       </xs:sequence>
     </xs:complexType>
-    <xs:key name="keyDanhMuc">
-      <xs:selector xpath="DANHMUC"/>
-      <xs:field xpath="@MADM"/>
+
+    <!-- Khóa chính -->
+    <xs:key name="pkDanhMuc">
+      <xs:selector xpath="DANHMUC" />
+      <xs:field xpath="MADM" />
     </xs:key>
-    <xs:key name="keySanPham">
-      <xs:selector xpath="SANPHAM"/>
-      <xs:field xpath="@MASP"/>
+
+    <xs:key name="pkSanPham">
+      <xs:selector xpath="SANPHAM" />
+      <xs:field xpath="MASP" />
     </xs:key>
-    <xs:key name="keyNhaCungCap">
-      <xs:selector xpath="NHACUNGCAP"/>
-      <xs:field xpath="@MANCC"/>
+
+    <xs:key name="pkNhaCungCap">
+      <xs:selector xpath="NHACUNGCAP" />
+      <xs:field xpath="MANCC" />
     </xs:key>
-    <xs:key name="keyNhanVien">
-      <xs:selector xpath="NHANVIEN"/>
-      <xs:field xpath="@MANV"/>
+
+    <xs:key name="pkNhanVien">
+      <xs:selector xpath="NHANVIEN" />
+      <xs:field xpath="MANV" />
     </xs:key>
-    <xs:key name="keyPhieu">
-      <xs:selector xpath="PHIEU"/>
-      <xs:field xpath="@MAPHIEU"/>
+
+    <xs:key name="pkPhieu">
+      <xs:selector xpath="PHIEU" />
+      <xs:field xpath="MAPHIEU" />
     </xs:key>
-    <xs:key name="keyChiTietPhieu">
-      <xs:selector xpath="CHITIETPHIEU"/>
-      <xs:field xpath="@MACTP"/>
+
+    <xs:key name="pkChiTietPhieu">
+      <xs:selector xpath="CHITIETPHIEU" />
+      <xs:field xpath="MACTP" />
     </xs:key>
-    <xs:key name="keyKe">
-      <xs:selector xpath="KE"/>
-      <xs:field xpath="@MAKE"/>
+
+    <xs:key name="pkKe">
+      <xs:selector xpath="KE" />
+      <xs:field xpath="MAKE" />
     </xs:key>
-    <xs:keyref name="refSanPhamToDanhMuc" refer="keyDanhMuc">
-      <xs:selector xpath="SANPHAM"/>
-      <xs:field xpath="@MADM"/>
+
+    <!-- Ràng buộc duy nhất cho tài khoản -->
+    <xs:unique name="uniqueTaiKhoan">
+      <xs:selector xpath="NHANVIEN" />
+      <xs:field xpath="TAIKHOAN" />
+    </xs:unique>
+
+    <!-- Khóa ngoại -->
+    <xs:keyref name="fkSanPhamDanhMuc" refer="pkDanhMuc">
+      <xs:selector xpath="SANPHAM" />
+      <xs:field xpath="MADM" />
     </xs:keyref>
-    <xs:keyref name="refPhieuToNhaCungCap" refer="keyNhaCungCap">
-      <xs:selector xpath="PHIEU"/>
-      <xs:field xpath="@MANCC"/>
+
+    <xs:keyref name="fkPhieuNhaCungCap" refer="pkNhaCungCap">
+      <xs:selector xpath="PHIEU" />
+      <xs:field xpath="MANCC" />
     </xs:keyref>
-    <xs:keyref name="refPhieuToNhanVien" refer="keyNhanVien">
-      <xs:selector xpath="PHIEU"/>
-      <xs:field xpath="@MANV"/>
+
+    <xs:keyref name="fkPhieuNhanVien" refer="pkNhanVien">
+      <xs:selector xpath="PHIEU" />
+      <xs:field xpath="MANV" />
     </xs:keyref>
-    <xs:keyref name="refChiTietPhieuToPhieu" refer="keyPhieu">
-      <xs:selector xpath="CHITIETPHIEU"/>
-      <xs:field xpath="@MAPHIEU"/>
+
+    <xs:keyref name="fkChiTietPhieuPhieu" refer="pkPhieu">
+      <xs:selector xpath="CHITIETPHIEU" />
+      <xs:field xpath="MAPHIEU" />
     </xs:keyref>
-    <xs:keyref name="refChiTietPhieuToSanPham" refer="keySanPham">
-      <xs:selector xpath="CHITIETPHIEU"/>
-      <xs:field xpath="@MASP"/>
+
+    <xs:keyref name="fkChiTietPhieuSanPham" refer="pkSanPham">
+      <xs:selector xpath="CHITIETPhieu" />
+      <xs:field xpath="MASP" />
     </xs:keyref>
-    <xs:keyref name="refKeToSanPham" refer="keySanPham">
-      <xs:selector xpath="KE"/>
-      <xs:field xpath="@MASP"/>
+
+    <xs:keyref name="fkKeSanPham" refer="pkSanPham">
+      <xs:selector xpath="KE" />
+      <xs:field xpath="MASP" />
     </xs:keyref>
   </xs:element>
-
-
-
 </xs:schema>
