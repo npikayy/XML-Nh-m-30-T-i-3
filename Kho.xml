@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QUANLYKHO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="quanlykho.xsd">
+<!DOCTYPE QUANLYKHO SYSTEM "quanlykho.dtd">
+<QUANLYKHO>
 
     <!-- Dữ liệu mẫu cho bảng DanhMuc -->
     <DANHMUC MADM="DM001">
@@ -134,31 +134,31 @@
     <NHANVIEN MANV="NV001">
         <TENNV>Nguyễn Văn An</TENNV>
         <SODT>0903111111</SODT>
-        <VITRI>Quản lý kho</VITRI>
+        <TAIKHOAN>AN123</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN MANV="NV002">
         <TENNV>Trần Thị Bình</TENNV>
         <SODT>0903222222</SODT>
-        <VITRI>Nhân viên nhập hàng</VITRI>
+        <TAIKHOAN>BINH123</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN MANV="NV003">
         <TENNV>Lê Văn Cường</TENNV>
         <SODT>0903333333</SODT>
-        <VITRI>Nhân viên xuất hàng</VITRI>
+        <TAIKHOAN>CUONG123</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN MANV="NV004">
         <TENNV>Phạm Thị Dung</TENNV>
         <SODT>0903444444</SODT>
-        <VITRI>Nhân viên kho</VITRI>
+        <TAIKHOAN>DUNG123</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN MANV="NV005">
         <TENNV>Hoàng Văn Em</TENNV>
         <SODT>0903555555</SODT>
-        <VITRI>Nhân viên kho</VITRI>
+        <TAIKHOAN>EM123</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
 

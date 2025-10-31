@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QUANLYKHO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="quanlykho.xsd">
+<QUANLYKHO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quanlykho.xsd">
 
     <!-- Dữ liệu mẫu cho bảng DanhMuc -->
     <DANHMUC>
@@ -39,7 +38,7 @@
         <GIABAN>25900000</GIABAN>
         <KICHTHUOC>6.1 inch</KICHTHUOC>
         <MAUSAC>Titan Xanh</MAUSAC>
-        <CHATLIEU>Titanium</CHATLIEU>
+        <CHATLIEU>Titan</CHATLIEU>
         <HANG>Apple</HANG>
     </SANPHAM>
     <SANPHAM>
@@ -51,7 +50,7 @@
         <GIABAN>21900000</GIABAN>
         <KICHTHUOC>6.2 inch</KICHTHUOC>
         <MAUSAC>Đen</MAUSAC>
-        <CHATLIEU>Kính</CHATLIEU>
+        <CHATLIEU>Nhôm</CHATLIEU>
         <HANG>Samsung</HANG>
     </SANPHAM>
     <SANPHAM>
@@ -108,7 +107,7 @@
         <MANCC>NCC001</MANCC>
         <TENNCC>Công ty TNHH Apple Việt Nam</TENNCC>
         <DIACHI>TP. Hồ Chí Minh</DIACHI>
-        <SODT>02838123456</SODT>
+        <SODT>02838123346</SODT>
         <EMAIL>contact@apple.com.vn</EMAIL>
     </NHACUNGCAP>
     <NHACUNGCAP>
@@ -145,7 +144,7 @@
         <MANV>NV001</MANV>
         <TENNV>Nguyễn Văn An</TENNV>
         <SODT>0903111111</SODT>
-        <TAIKHOAN>an123</TAIKHOAN>
+        <TAIKHOAN>an123456</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN>
@@ -159,7 +158,7 @@
         <MANV>NV003</MANV>
         <TENNV>Lê Văn Cường</TENNV>
         <SODT>0903333333</SODT>
-        <TAIKHOAN>lecuong</TAIKHOAN>
+        <TAIKHOAN>levancuong</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
     <NHANVIEN>
@@ -173,7 +172,7 @@
         <MANV>NV005</MANV>
         <TENNV>Hoàng Văn Em</TENNV>
         <SODT>0903555555</SODT>
-        <TAIKHOAN>hoangem</TAIKHOAN>
+        <TAIKHOAN>hoangvanem</TAIKHOAN>
         <MATKHAU>123456</MATKHAU>
     </NHANVIEN>
 
@@ -184,8 +183,7 @@
         <MANV>NV001</MANV>
         <NGAYNHAP>2024-01-15</NGAYNHAP>
         <TONGTIEN>610000000</TONGTIEN>
-        <NGHI>Nhập hàng đầu tháng 1</NGHI>
-        <TENNV>Nguyễn Văn An</TENNV>
+        <MoTa>Nhập hàng đầu tháng 1</MoTa>
         <LOAIPHIEU>nhap</LOAIPHIEU>
     </PHIEU>
     <PHIEU>
@@ -194,8 +192,7 @@
         <MANV>NV002</MANV>
         <NGAYNHAP>2024-01-16</NGAYNHAP>
         <TONGTIEN>140000000</TONGTIEN>
-        <NGHI>Nhập laptop MacBook</NGHI>
-        <TENNV>Trần Thị Bình</TENNV>
+        <MoTa>Nhập laptop MacBook</MoTa>
         <LOAIPHIEU>nhap</LOAIPHIEU>
     </PHIEU>
     <PHIEU>
@@ -204,8 +201,7 @@
         <MANV>NV003</MANV>
         <NGAYNHAP>2024-01-17</NGAYNHAP>
         <TONGTIEN>51800000</TONGTIEN>
-        <NGHI>Xuất bán cho khách lẻ</NGHI>
-        <TENNV>Lê Văn Cường</TENNV>
+        <MoTa>Xuất bán cho khách lẻ</MoTa>
         <LOAIPHIEU>xuat</LOAIPHIEU>
     </PHIEU>
     <PHIEU>
@@ -214,8 +210,7 @@
         <MANV>NV004</MANV>
         <NGAYNHAP>2024-01-18</NGAYNHAP>
         <TONGTIEN>86700000</TONGTIEN>
-        <NGHI>Xuất bán sỉ</NGHI>
-        <TENNV>Phạm Thị Dung</TENNV>
+        <MoTa>Xuất bán sỉ</MoTa>
         <LOAIPHIEU>xuat</LOAIPHIEU>
     </PHIEU>
     <PHIEU>
@@ -224,8 +219,7 @@
         <MANV>NV001</MANV>
         <NGAYNHAP>2024-01-19</NGAYNHAP>
         <TONGTIEN>34950000</TONGTIEN>
-        <NGHI>Nhập màn hình</NGHI>
-        <TENNV>Nguyễn Văn An</TENNV>
+        <MoTa>Nhập màn hình</MoTa>
         <LOAIPHIEU>nhap</LOAIPHIEU>
     </PHIEU>
 
