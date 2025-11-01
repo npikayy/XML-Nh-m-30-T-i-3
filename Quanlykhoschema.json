@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QuanLyKhoSchema",
+  "type": "object",
+  "properties": {
+    "QUANLYKHO": {
+      "type": "object",
+      "properties": {
+        "DANHMUC": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "MADM": {"type": "string"},
+              "TENDM": {"type": "string", "minLength": 1, "maxLength": 100},
+              "MOTA": {"type": "string", "maxLength": 500}
+            },
+            "required": ["MADM", "TENDM"],
+            "additionalProperties": false
+          }
+        },
+        "SANPHAM": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "MASP": {"type": "string"},
+              "MADM": {"type": "string"},
+              "TENSP": {"type": "string", "minLength": 1, "maxLength": 100},
+              "MOTA": {"type": "string", "maxLength": 500},
+              "GIANHAP": {"type": "number", "minimum": 0},
+              "GIABAN": {"type": "number", "minimum": 0},
+              "KICHTHUOC": {"type": "string", "pattern": "^[0-9]+(\\.[0-9]+)?\\s*inch$", "maxLength": 20},
+              "MAUSAC": {
+                "type": "string",
+                "enum": ["Đen", "Trắng", "Xám", "Bạc", "Vàng", "Hồng", "Xanh", "Đỏ", "Tím", "Nâu", "Xanh lá", "Cam", "Titan Xanh", "Titan Tự nhiên", "Titan Đen", "Titan Trắng"]
+              },
+              "CHATLIEU": {
+                "type": "string",
+                "enum": ["Thép", "Nhôm", "Nhựa", "Ceramic", "Titan", "Đồng", "Hợp kim", "Sợi carbon"]
+              },
+              "HANG": {"type": "string"}
+            },
+            "required": ["MASP", "MADM", "TENSP", "GIANHAP", "GIABAN", "KICHTHUOC"],
+            "additionalProperties": false
+          }
+        },
+        "NHACUNGCAP": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "MANCC": {"type": "string"},
+              "TENNCC": {"type": "string", "minLength": 1, "maxLength": 100},
+              "DIACHI": {"type": "string"},
+              "SODT": {"type": "string", "pattern": "^[0-9]{10,11}$"},
+              "EMAIL": {"type": "string", "format": "email", "maxLength": 100}
+            },
+            "required": ["MANCC", "TENNCC", "DIACHI", "SODT"],
+            "additionalProperties": false
+          }
+        },
+        "NHANVIEN": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "MANV": {"type": "string"},
+              "TENNV": {"type": "string", "minLength": 1, "maxLength": 100},
+              "SODT": {"type": "string", "pattern": "^[0-9]{10,11}$"},
+              "TAIKHOAN": {"type": "string", "pattern": "^[a-zA-Z0-9_]{8,50}$"},
+              "MATKHAU": {"type": "string", "minLength": 6}
+            },
+            "required": ["MANV", "TENNV", "SODT", "TAIKHOAN", "MATKHAU"],
+            "additionalProperties": false
+          }
+        },
+        "PHIEU": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "MAPHIEU": {"type": "string"},
+              "MANCC": {"type": "string"},
+              "MANV": {"type": "string"},
+              "NGAYNHAP": {"type": "string", "format": "date"},
+              "TONGTIEN": {"type": "number", "minimum": 0},
+              "MoTa": {"type": "string"},
+              "LOAIPHIEU": {"type": "string", "enum": ["nhap", "xuat"]}
+            },
+            "required": ["MAPHIEU", "MANCC", "MANV", "NGAYNHAP", "TONGTIEN", "LOAIPHIEU"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["DANHMUC", "SANPHAM", "NHACUNGCAP", "NHANVIEN", "PHIEU"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["QUANLYKHO"],
+  "additionalProperties": false
+}

@@ -1,0 +1,232 @@
+{
+  "$schema": "./Quanlykhoschema.json",
+  "QUANLYKHO": {
+    "DANHMUC": [
+      {
+        "MADM": "DM001",
+        "TENDM": "Điện Thoại",
+        "MOTA": "Các loại điện thoại thông minh"
+      },
+      {
+        "MADM": "DM002",
+        "TENDM": "Laptop",
+        "MOTA": "Máy tính xách tay các loại"
+      },
+      {
+        "MADM": "DM003",
+        "TENDM": "Tablet",
+        "MOTA": "Máy tính bảng"
+      },
+      {
+        "MADM": "DM004",
+        "TENDM": "Phụ Kiện",
+        "MOTA": "Phụ kiện điện tử"
+      },
+      {
+        "MADM": "DM005",
+        "TENDM": "Màn Hình",
+        "MOTA": "Màn hình máy tính và TV"
+      }
+    ],
+
+    "SANPHAM": [
+      {
+        "MASP": "SP001",
+        "MADM": "DM001",
+        "TENSP": "iPhone 15 Pro",
+        "MOTA": "Điện thoại Apple flagship 2024",
+        "GIANHAP": 22000000,
+        "GIABAN": 25900000,
+        "KICHTHUOC": "6.1 inch",
+        "MAUSAC": "Titan Xanh",
+        "CHATLIEU": "Titan",
+        "HANG": "Apple"
+      },
+      {
+        "MASP": "SP002",
+        "MADM": "DM001",
+        "TENSP": "Samsung Galaxy S24",
+        "MOTA": "Điện thoại Android cao cấp",
+        "GIANHAP": 18000000,
+        "GIABAN": 21900000,
+        "KICHTHUOC": "6.2 inch",
+        "MAUSAC": "Đen",
+        "CHATLIEU": "Nhôm",
+        "HANG": "Samsung"
+      },
+      {
+        "MASP": "SP003",
+        "MADM": "DM002",
+        "TENSP": "MacBook Air M2",
+        "MOTA": "Laptop Apple siêu mỏng nhẹ",
+        "GIANHAP": 28000000,
+        "GIABAN": 32900000,
+        "KICHTHUOC": "13.6 inch",
+        "MAUSAC": "Bạc",
+        "CHATLIEU": "Nhôm",
+        "HANG": "Apple"
+      },
+      {
+        "MASP": "SP004",
+        "MADM": "DM003",
+        "TENSP": "iPad Pro 12.9",
+        "MOTA": "Tablet chuyên nghiệp",
+        "GIANHAP": 25000000,
+        "GIABAN": 28900000,
+        "KICHTHUOC": "12.9 inch",
+        "MAUSAC": "Xám",
+        "CHATLIEU": "Nhôm",
+        "HANG": "Apple"
+      },
+      {
+        "MASP": "SP005",
+        "MADM": "DM005",
+        "TENSP": "Màn hình Dell 27 inch",
+        "MOTA": "Màn hình gaming 144Hz",
+        "GIANHAP": 5500000,
+        "GIABAN": 6990000,
+        "KICHTHUOC": "27 inch",
+        "MAUSAC": "Đen",
+        "CHATLIEU": "Nhựa",
+        "HANG": "Dell"
+      },
+      {
+        "MASP": "SP006",
+        "MADM": "DM005",
+        "TENSP": "TV Samsung 55 inch",
+        "MOTA": "Smart TV 4K UHD",
+        "GIANHAP": 12000000,
+        "GIABAN": 14900000,
+        "KICHTHUOC": "55 inch",
+        "MAUSAC": "Đen",
+        "CHATLIEU": "Nhựa",
+        "HANG": "Samsung"
+      }
+    ],
+
+    "NHACUNGCAP": [
+      {
+        "MANCC": "NCC001",
+        "TENNCC": "Công ty TNHH Apple Việt Nam",
+        "DIACHI": "TP. Hồ Chí Minh",
+        "SODT": "02838123346",
+        "EMAIL": "contact@apple.com.vn"
+      },
+      {
+        "MANCC": "NCC002",
+        "TENNCC": "Công ty Samsung Electronics",
+        "DIACHI": "Hà Nội",
+        "SODT": "02438567890",
+        "EMAIL": "info@samsung.com.vn"
+      },
+      {
+        "MANCC": "NCC003",
+        "TENNCC": "Công ty Phụ Kiện Số",
+        "DIACHI": "Đà Nẵng",
+        "SODT": "02363555555",
+        "EMAIL": "sales@phukienso.vn"
+      },
+      {
+        "MANCC": "NCC004",
+        "TENNCC": "Công ty Máy Tính Việt",
+        "DIACHI": "TP. Hồ Chí Minh",
+        "SODT": "02838666666",
+        "EMAIL": "contact@maytinhviet.com"
+      },
+      {
+        "MANCC": "NCC005",
+        "TENNCC": "Công ty Thiết Bị Thông Minh",
+        "DIACHI": "Cần Thơ",
+        "SODT": "02923877777",
+        "EMAIL": "info@thietbithongminh.vn"
+      }
+    ],
+
+    "NHANVIEN": [
+      {
+        "MANV": "NV001",
+        "TENNV": "Nguyễn Văn An",
+        "SODT": "0903111111",
+        "TAIKHOAN": "an123456",
+        "MATKHAU": "123456"
+      },
+      {
+        "MANV": "NV002",
+        "TENNV": "Trần Thị Bình",
+        "SODT": "0903222222",
+        "TAIKHOAN": "tranbinh",
+        "MATKHAU": "123456"
+      },
+      {
+        "MANV": "NV003",
+        "TENNV": "Lê Văn Cường",
+        "SODT": "0903333333",
+        "TAIKHOAN": "levancuong",
+        "MATKHAU": "123456"
+      },
+      {
+        "MANV": "NV004",
+        "TENNV": "Phạm Thị Dung",
+        "SODT": "0903444444",
+        "TAIKHOAN": "phamdung",
+        "MATKHAU": "123456"
+      },
+      {
+        "MANV": "NV005",
+        "TENNV": "Hoàng Văn Em",
+        "SODT": "0903555555",
+        "TAIKHOAN": "hoangvanem",
+        "MATKHAU": "123456"
+      }
+    ],
+
+    "PHIEU": [
+      {
+        "MAPHIEU": "PN001",
+        "MANCC": "NCC001",
+        "MANV": "NV001",
+        "NGAYNHAP": "2024-01-15",
+        "TONGTIEN": 610000000,
+        "MoTa": "Nhập hàng đầu tháng 1",
+        "LOAIPHIEU": "nhap"
+      },
+      {
+        "MAPHIEU": "PN002",
+        "MANCC": "NCC002",
+        "MANV": "NV002",
+        "NGAYNHAP": "2024-01-16",
+        "TONGTIEN": 140000000,
+        "MoTa": "Nhập laptop MacBook",
+        "LOAIPHIEU": "nhap"
+      },
+      {
+        "MAPHIEU": "PX001",
+        "MANCC": "NCC001",
+        "MANV": "NV003",
+        "NGAYNHAP": "2024-01-17",
+        "TONGTIEN": 51800000,
+        "MoTa": "Xuất bán cho khách lẻ",
+        "LOAIPHIEU": "xuat"
+      },
+      {
+        "MAPHIEU": "PX002",
+        "MANCC": "NCC001",
+        "MANV": "NV004",
+        "NGAYNHAP": "2024-01-18",
+        "TONGTIEN": 86700000,
+        "MoTa": "Xuất bán sỉ",
+        "LOAIPHIEU": "xuat"
+      },
+      {
+        "MAPHIEU": "PN003",
+        "MANCC": "NCC004",
+        "MANV": "NV001",
+        "NGAYNHAP": "2024-01-19",
+        "TONGTIEN": 34950000,
+        "MoTa": "Nhập màn hình",
+        "LOAIPHIEU": "nhap"
+      }
+    ]
+  }
+}
+
